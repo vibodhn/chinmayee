@@ -21,7 +21,7 @@ body {
 
 .page {
   position: relative;
-  min-height: 100vh;
+  min-height: 100dvh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -326,7 +326,7 @@ body {
 
 @media (max-width: 600px) {
   .page {
-    align-items: flex-start;
+    /*align-items: flex-start;*/
     padding: 1.25rem 1rem;
   }
 
