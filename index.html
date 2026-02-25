@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dear Chinmayee</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Quicksand:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="background">
+      <div class="hearts hearts--one"></div>
+      <div class="hearts hearts--two"></div>
+      <div class="clouds clouds--one"></div>
+      <div class="clouds clouds--two"></div>
+    </div>
+
+    <main class="page">
+      <!-- Intro typewriter sequence -->
+      <section id="intro" class="intro visible">
+        <div class="intro__inner">
+          <p id="intro-text" class="intro__text"></p>
+        </div>
+      </section>
+
+      <!-- Question card -->
+      <section id="question-section" class="question hidden">
+        <div class="card">
+          <h1 id="question-text" class="card__question"></h1>
+          <div class="card__options">
+            <button id="option-left" class="btn btn--primary"></button>
+            <button id="option-right" class="btn btn--secondary"></button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Success screen -->
+      <section id="success-section" class="success hidden">
+        <div class="success__inner">
+          <div class="success__cat-wrapper">
+            <img
+              id="cat-image"
+              class="success__cat"
+              src="cat.gif"
+              alt="Cute celebrating cat"
+            />
+          </div>
+          <h2 class="success__title">Yay!! Masti time</h2>
+          <div id="confetti-container" class="confetti-container"></div>
+        </div>
+      </section>
+
+      <button id="mute-toggle" class="mute hidden" aria-label="Toggle music">
+        🔈
+      </button>
+    </main>
+
+    <audio id="bg-music" src="song.mp3" loop></audio>
+
+    <script src="script.js"></script>
+  </body>
+</html>
+
