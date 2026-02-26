@@ -10,6 +10,7 @@ const REPLACEMENT_OPTIONS = [
   "kartography",
   "mom's rajma chawal",
   "bralette",
+  "rasam",
   "summer",
   "eclairs",
   "timothee",
